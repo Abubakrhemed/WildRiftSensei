@@ -1,0 +1,74 @@
+/* Dark Mode Styles */
+body{
+    background-color: rgb(1, 1, 14);
+    color: white;
+}
+
+nav{
+    margin-bottom: 5;
+}
+
+nav h1 {
+    color: white;
+    background: linear-gradient(to bottom, #9b59b6, #8e44ad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* Fallback for non-WebKit browsers */
+     font-family: 'Playwrite NZ';
+
+}
+
+.nav-links li {
+    color: white;
+}
+
+.btn {
+    background: #8e44ad;
+    color: white;
+    border: 1px solid #fff;
+}
+
+.btn-light{
+    background: transparent;
+    color: #fff;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: 0.3s;
+}
+
+.Learn-section{
+    text-align: center;
+    font-family: 'Playwrite NZ';
+    margin-bottom: 5%;
+}
+
+.learn-container {
+width: 100%;
+
+}
+
+.header {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.header h1{
+ font-size: 3rem;
+
+}
+
+.header img{
+width: 100%;
+max-width: 100px;
+
+}
+
+.top-img img{
+    width: 100%;
+    max-width: 400px;
+    
+}
