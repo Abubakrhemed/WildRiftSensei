@@ -72,3 +72,24 @@ max-width: 100px;
     max-width: 400px;
     
 }
+.top-content p{
+    margin-bottom: 5%;
+    font-size: 1.3rem;
+    margin-top: 5%;
+}
+
+.top-content {
+    text-align: center; 
+}
+
+.top-content a.btn {
+    display: inline-block; 
+
+}
+
+
+.card1{
+ width: 50%;
+ padding: 10px 10px 30px 10px;
+ background: linear-gradient(to right, #432251, #8e44ad);
+}
