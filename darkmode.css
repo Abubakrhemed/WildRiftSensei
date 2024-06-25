@@ -1,12 +1,17 @@
 /* Dark Mode Styles */
-body{
+body {
     background-color: rgb(1, 1, 14);
     color: white;
+    padding-top: 60px; /* Adjust this value based on the height of your navbar */
 }
 
-nav{
-    margin-bottom: 5;
+nav {
+    margin-bottom: 5px;
     width: 100%;
+    position: fixed;
+    top: 0; /* Fix to the top of the page */
+    background-color: rgb(1, 1, 14); /* Ensure the navbar has a background color */
+    z-index: 1000; /* Ensure it is above other content */
 }
 
 nav h1 {
@@ -14,10 +19,8 @@ nav h1 {
     background: linear-gradient(to bottom, #9b59b6, #8e44ad);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text; /* Fallback for non-WebKit browsers */
-     font-family: 'Playwrite NZ';
-    
-
+    background-clip: text; 
+    font-family: 'Playwrite NZ';
 }
 
 .nav-links li {
@@ -30,7 +33,7 @@ nav h1 {
     border: 1px solid #fff;
 }
 
-.btn-light{
+.btn-light {
     background: transparent;
     color: #fff;
 }
@@ -41,133 +44,249 @@ nav h1 {
     transition: 0.3s;
 }
 
-.Learn-section{
+hr {
+    margin-top: 10%;
+}
+
+.Learn-section {
     text-align: center;
     font-family: 'Playwrite NZ';
     margin-bottom: 5%;
+    margin-top: 10%;
 }
 
-.learn-container {
-width: 100%;
-
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header {
-display: flex;
-align-items: center;
-justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.header h1{
- font-size: 3rem;
-
+.header h1 {
+    font-size: 3rem;
 }
 
-.header img{
-width: 100%;
-max-width: 100px;
-
+.header img {
+    width: 100%;
+    max-width: 100px;
 }
 
 .top-sections {
-    display: flex;
-    gap: 3rem;
-    justify-content: center;
-    
-
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 2rem; 
+    justify-items: center; 
+    align-items: stretch; /* Ensure all items stretch to the same height */
+    width: 100%;
+    max-width: 1200px; 
+    margin: auto;
 }
 
 .top-img {
     display: flex;
-    justify-content: center; 
-    height: 300px; 
+    justify-content: center;
+    height: 300px;
 }
 
 .top-img img {
-    max-width: 100%; 
-    max-height: 100%; 
-    height: auto; 
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
 }
 
-
-.top-content p{
+.top-content p {
     margin-bottom: 5%;
     font-size: 1.3rem;
     margin-top: 5%;
 }
 
 .top-content {
-    text-align: center; 
+    text-align: center;
+    flex-grow: 1; /* Ensure content takes up remaining space */
 }
 
 .top-content a.btn {
-    display: inline-block; 
-
+    display: inline-block;
 }
 
-.card2{
-    width: 30%;
+.card2, .card1 {
+    width: 100%;
+    max-width: 500px; 
     padding: 10px 10px 30px 10px;
     background: linear-gradient(to left, #432251, #445cad);
+    display: flex;
+    flex-direction: column; /* Ensure items are arranged in a column */
+    justify-content: space-between; /* Ensure content is spaced out */
 }
-
 
 .card1 {
- width: 30%;
-
- padding: 10px 10px 30px 10px;
- background: linear-gradient(to right, #432251, #8e44ad);
+    background: linear-gradient(to right, #432251, #4d44ad);
 }
 
+/*windows split screen*/
+@media screen and (max-width: 768px) {
+    .top-sections {
+        grid-template-columns: 1fr; 
+        
+    }
 
+}
 
+/*tablets*/
 @media screen and (max-width: 600px) {
     .card1,
     .card2 {
-        width: 100%; 
+        width: 100%;
         margin-bottom: 10%;
-     
+        height: auto;
+        max-width: 400px;
     }
 
-    .top-sections{
-        display: block;
-       
+    .top-img img {
+        width: 100%;
+        max-width: 40rem;
+        height: auto;
+    }
+    
+    .header {
+        margin-bottom: 5%;
     }
 
+    .header h1 {
+        font-size: 2rem;
+    }
 
-.top-img img {
-    max-width: 100%; 
-    max-height: 100%; 
-    height: auto; 
+    .header img {
+        width: 50%;
+        max-width: 50px;
+    }
+
+    .btn {
+        padding: 10px 10px;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #222;
+        border: 1px solid #fff;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    nav h1 {
+        font-size: 15px;
+    }
 }
-.header{
-    margin-bottom: 5%;
+/*Iphone se*/
+@media screen and (max-width: 380px) {
+    .top-sections {
+        grid-template-columns: 1fr; 
+        gap: 1rem;
+    }
+
+    .card1, .card2 {
+        width: 100%;
+        margin-bottom: 10%;
+        height: auto;
+        max-width: 400px;
+    }
+
+    .top-img {
+        height: 15rem;
+    }
+
+    .header h1 {
+        font-size: 1rem;
+    }
+
+    .header img {
+        width: 75%;
+        max-width: 75px;
+    }
+
+    .btn {
+        padding: 8px;
+        font-size: 10px;
+    }
+
+    nav h1 {
+        font-size: 11px;
+    }
 }
-.header h1{
- font-size: 2rem;
+/*samsung galazy s8+*/
+@media screen and (max-width: 365px) {
+    .top-sections {
+        grid-template-columns: 1fr; 
+        gap: 1rem;
+    }
 
+    .card1, .card2 {
+        width: 100%;
+        margin-bottom: 10%;
+        height: auto;
+        max-width: 400px;
+    }
+
+    .top-img {
+        height: 14rem;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .header img {
+        width: 75%;
+        max-width: 75px;
+    }
+
+    .btn {
+        padding: 2px;
+        font-size: 10px;
+    }
+
+    nav h1 {
+        font-size: 10px;
+    }
 }
+/*Iphone 12 pro*/
+@media screen and (max-width: 395px) {
+    .top-sections {
+        grid-template-columns: 1fr; 
+        gap: 1rem;
+    }
 
-.header img{
-width: 50%;
-max-width: 50px;
+    .card1, .card2 {
+        width: 100%;
+        margin-bottom: 10%;
+        height: auto;
+        max-width: 400px;
+    }
 
-}
+    .top-img {
+        height: 14rem;
+    }
 
-.btn{
-    padding: 5px 5px;
-    font-size: 12px;
-    text-transform: uppercase;
-  
-    color: #222;
-    border: 1px solid #fff;
-    font-weight: 600;
-    cursor: pointer;
-}
+    .header h1 {
+        font-size: 1.8rem;
+    }
 
-.nav h1 {
-     font-size: 1px;
+    .header img {
+        width: 75%;
+        max-width: 75px;
+    }
 
-}
+    .btn {
+        padding: 4px;
+        font-size: 11px;
+    }
 
+    nav h1 {
+        font-size: 12px;
+    }
 }
