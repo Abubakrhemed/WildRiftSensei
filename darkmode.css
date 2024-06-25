@@ -2,16 +2,20 @@
 body {
     background-color: rgb(1, 1, 14);
     color: white;
-    padding-top: 60px; /* Adjust this value based on the height of your navbar */
+    padding-top: 60px;
+    /* Adjust this value based on the height of your navbar */
 }
 
 nav {
     margin-bottom: 5px;
     width: 100%;
     position: fixed;
-    top: 0; /* Fix to the top of the page */
-    background-color: rgb(1, 1, 14); /* Ensure the navbar has a background color */
-    z-index: 1000; /* Ensure it is above other content */
+    top: 0;
+    /* Fix to the top of the page */
+    background-color: rgb(1, 1, 14);
+    /* Ensure the navbar has a background color */
+    z-index: 1000;
+    /* Ensure it is above other content */
 }
 
 nav h1 {
@@ -19,7 +23,7 @@ nav h1 {
     background: linear-gradient(to bottom, #9b59b6, #8e44ad);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text; 
+    background-clip: text;
     font-family: 'Playwrite NZ';
 }
 
@@ -67,25 +71,30 @@ hr {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 5%;
 }
 
 .header h1 {
     font-size: 3rem;
+    margin-top: 10%;
+
 }
 
 .header img {
     width: 100%;
     max-width: 100px;
+    margin-bottom: 10%;
 }
 
-.top-sections {
+.section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 2rem; 
-    justify-items: center; 
-    align-items: stretch; /* Ensure all items stretch to the same height */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    align-items: stretch;
+    /* Ensure all items stretch to the same height */
     width: 100%;
-    max-width: 1200px; 
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -109,40 +118,71 @@ hr {
 
 .top-content {
     text-align: center;
-    flex-grow: 1; /* Ensure content takes up remaining space */
+    flex-grow: 1;
+    /* Ensure content takes up remaining space */
 }
 
 .top-content a.btn {
     display: inline-block;
 }
 
-.card2, .card1 {
+.card2,
+.card1,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7,
+.card8,
+.card9,
+.card10 {
     width: 100%;
-    max-width: 500px; 
+    max-width: 500px;
     padding: 10px 10px 30px 10px;
-    background: linear-gradient(to left, #432251, #445cad);
     display: flex;
-    flex-direction: column; /* Ensure items are arranged in a column */
-    justify-content: space-between; /* Ensure content is spaced out */
+    flex-direction: column;
+    /* Ensure items are arranged in a column */
+    justify-content: space-between;
+    /* Ensure content is spaced out */
 }
 
 .card1 {
     background: linear-gradient(to right, #432251, #4d44ad);
 }
+.card2{
+   background: linear-gradient(to right, #432251, #4d44ad);
+    
+}
+.card3{
+    background: linear-gradient(to right, #432251, #44ad6a);
+}
+.card4{
+   background: linear-gradient(to right, #432251, #44ad75);
+    
+}
 
 /*windows split screen*/
 @media screen and (max-width: 768px) {
-    .top-sections {
-        grid-template-columns: 1fr; 
-        
+    .section {
+        grid-template-columns: 1fr;
+
     }
 
 }
 
 /*tablets*/
 @media screen and (max-width: 600px) {
+
+    .card2,
     .card1,
-    .card2 {
+    .card3,
+    .card4,
+    .card5,
+    .card6,
+    .card7,
+    .card8,
+    .card9,
+    .card10 {
         width: 100%;
         margin-bottom: 10%;
         height: auto;
@@ -154,7 +194,7 @@ hr {
         max-width: 40rem;
         height: auto;
     }
-    
+
     .header {
         margin-bottom: 5%;
     }
@@ -182,14 +222,24 @@ hr {
         font-size: 15px;
     }
 }
+
 /*Iphone se*/
 @media screen and (max-width: 380px) {
-    .top-sections {
-        grid-template-columns: 1fr; 
+    .section {
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
 
-    .card1, .card2 {
+    .card2,
+    .card1,
+    .card3,
+    .card4,
+    .card5,
+    .card6,
+    .card7,
+    .card8,
+    .card9,
+    .card10 {
         width: 100%;
         margin-bottom: 10%;
         height: auto;
@@ -218,14 +268,24 @@ hr {
         font-size: 11px;
     }
 }
+
 /*samsung galazy s8+*/
 @media screen and (max-width: 365px) {
-    .top-sections {
-        grid-template-columns: 1fr; 
+    .section {
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
 
-    .card1, .card2 {
+    .card2,
+    .card1,
+    .card3,
+    .card4,
+    .card5,
+    .card6,
+    .card7,
+    .card8,
+    .card9,
+    .card10 {
         width: 100%;
         margin-bottom: 10%;
         height: auto;
@@ -254,14 +314,24 @@ hr {
         font-size: 10px;
     }
 }
+
 /*Iphone 12 pro*/
 @media screen and (max-width: 395px) {
-    .top-sections {
-        grid-template-columns: 1fr; 
+    .section {
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
 
-    .card1, .card2 {
+    .card2,
+    .card1,
+    .card3,
+    .card4,
+    .card5,
+    .card6,
+    .card7,
+    .card8,
+    .card9,
+    .card10 {
         width: 100%;
         margin-bottom: 10%;
         height: auto;
