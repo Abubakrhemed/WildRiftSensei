@@ -160,6 +160,28 @@ hr {
    background: linear-gradient(to right, #432251, #44ad75);
     
 }
+.card5{
+    background: linear-gradient(to right, #432251, #8b6d01);
+}
+.card6{
+    background: linear-gradient(to right, #432251, #8b6d01);
+}
+
+.card7 {
+    background: linear-gradient(to left, #432251, #4d44ad);
+}
+.card8{
+   background: linear-gradient(to left, #432251, #4d44ad);
+    
+}
+
+.card9{
+    background: linear-gradient(to left, #432251, #44ad6a);
+}
+.card10{
+   background: linear-gradient(to left, #432251, #44ad75);
+    
+}
 
 /*windows split screen*/
 @media screen and (max-width: 768px) {
