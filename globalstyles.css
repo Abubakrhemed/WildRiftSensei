@@ -126,6 +126,20 @@ hr {
     display: inline-block;
 }
 
+.card2 p,
+.card1 p,
+.card3 p,
+.card4 p,
+.card5 p,
+.card6 p,
+.card7 p,
+.card8 p,
+.card9 p,
+.card10 p{
+height: 220px;
+}
+
+
 .card2,
 .card1,
 .card3,
